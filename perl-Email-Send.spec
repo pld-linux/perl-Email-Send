@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Email
-%define	pnam	Send
+%define		pdir	Email
+%define		pnam	Send
 Summary:	Email::Send - simply sending email
 Summary(pl):	Email::Send - po prostu wysy³anie e-maili
 Name:		perl-Email-Send
