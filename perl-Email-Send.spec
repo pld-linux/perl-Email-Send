@@ -17,12 +17,11 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	6c7a86243f0eb424a16ac1825f805c2a
 URL:		http://search.cpan.org/dist/Email-Send/
 %if %{with tests}
-BuildRequires:	perl-Email-Address
+BuildRequires:	perl-Email-Address >= 1.80
 BuildRequires:	perl-Email-Simple
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-IO-All
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
