@@ -6,7 +6,7 @@
 %define	pdir	Email
 %define	pnam	Send
 Summary:	Email::Send - simply sending email
-Summary(pl):	Email::Send - po prostu wysy³anie emaili
+Summary(pl):	Email::Send - po prostu wysy³anie e-maili
 Name:		perl-Email-Send
 Version:	1.43
 Release:	1
@@ -32,8 +32,8 @@ be small and simple, easy to use, and easy to extend.
 
 %description -l pl
 Modu³ ten dostarcza prostego, czystego i konkretnego interfejsu do
-ró¿nych mailerów. W za³o¿eniach oprogramowanie to ma byæ ma³e i
-proste, jak równie¿ ³atwe w u¿yciu i rozszerzaniu.
+ró¿nych programów pocztowych. W za³o¿eniach oprogramowanie to ma byæ
+ma³e i proste, jak równie¿ ³atwe w u¿yciu i rozszerzaniu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
