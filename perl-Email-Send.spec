@@ -11,7 +11,7 @@ Name:		perl-Email-Send
 Version:	1.43
 Release:	1
 # same as perl
-License:	GPL v1+ or Artistic	
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ad5b0d6ba14493991896e6ad4fbe1448
@@ -31,19 +31,18 @@ interface to multiple Email mailers. The goal if this software is to
 be small and simple, easy to use, and easy to extend.
 
 %description -l pl
+Modu³ ten dostarcza prostego, czystego i konkretnego interfejsu do
+ró¿nych mailerów. W za³o¿eniach oprogramowanie to ma byæ ma³e i
+proste, jak równie¿ ³atwe w u¿yciu i rozszerzaniu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-# Don't use pipes here: they generally don't work. Apply a patch.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 
 %{__make}
-# if module isn't noarch, use:
-# %{__make} \
-#	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
 
@@ -59,7 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-# use macros:
 %{perl_vendorlib}/Email/Send
 %{perl_vendorlib}/Email/Send.pm
 %{_mandir}/man3/*
