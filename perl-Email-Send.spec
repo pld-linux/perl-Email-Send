@@ -6,7 +6,7 @@
 %define		pdir	Email
 %define		pnam	Send
 Summary:	Email::Send - simply sending email
-Summary(pl.UTF-8):   Email::Send - po prostu wysyłanie e-maili
+Summary(pl.UTF-8):	Email::Send - po prostu wysyłanie e-maili
 Name:		perl-Email-Send
 Version:	2.185
 Release:	1
