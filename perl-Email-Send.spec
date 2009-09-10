@@ -8,13 +8,12 @@
 Summary:	Email::Send - simply sending email
 Summary(pl.UTF-8):	Email::Send - po prostu wysyłanie e-maili
 Name:		perl-Email-Send
-Version:	2.196
+Version:	2.198
 Release:	1
-# same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7fa43319bcfbddb6119e32442027f989
+# Source0-md5:	a977d48219aaf21b8cfbefe2826bcd47
 URL:		http://search.cpan.org/dist/Email-Send/
 %if %{with tests}
 BuildRequires:	perl-Email-Address >= 1.80
